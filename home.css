@@ -1,0 +1,161 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.shop-now {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.shop-categories-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 20px;
+}
+
+.shop-categories-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.shop-categories-text h2 {
+    font-size: 30px;
+    color: #333;
+}
+
+.shop-categories-text p {
+    font-size: 18px;
+    color: #777;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    flex: 2;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.category p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.special-sell {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 20px;
+}
+
+.sell-item {
+    text-align: center;
+    flex: 1;
+}
+
+.sell-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sell-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff6347;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .shop-categories-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories {
+        justify-content: center;
+    }
+
+    .special-sell {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sell-item {
+        margin-bottom: 20px;
+    }
+}
