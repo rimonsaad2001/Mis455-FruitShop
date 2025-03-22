@@ -10,23 +10,27 @@
     <header class="header">
         <h1>Shopping Cart</h1>
     </header>
-
     <nav class="navbar">
         <ul>
             <li><a href="home.html">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Shop</a></li>
             <li><a href="Product.html">Categories</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="Contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
         </ul>
     </nav>
 
     <section class="cart-container">
         <h2>Your Cart</h2>
         <div id="cart-items">
-            <!-- Cart items will be dynamically added here -->
+     
         </div>
         <div class="cart-total">
             <p>Total: $<span id="total-price">0.00</span></p>
             <button class="checkout-btn">Proceed to Checkout</button>
+            <button class="empty-cart-btn">Empty Cart</button>
         </div>
     </section>
 

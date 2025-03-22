@@ -67,3 +67,31 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.remove-item-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.remove-item-btn:hover {
+    background-color: darkred;
+}
+
+.empty-cart-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.empty-cart-btn:hover {
+    background-color: darkred;
+}
