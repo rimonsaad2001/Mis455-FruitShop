@@ -1,168 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Categories</title>
+    <title>Product Categories - Fruit Shop</title>
     <link rel="stylesheet" href="product.css">
 </head>
+
 <body>
-       <!--2221670 Dipto Mohammad Rimon Sadman-->
-    <div class="header">Fruit Shop - Product Categories</div>
-    <nav class="navbar">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="Product.html">Categories</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="product-category-container">
-        <h1>Our Products</h1><br><br>
+    <header>
+        <div class="header">Fruit Shop - Product Categories</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="Product.html">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-category-container">
+        <h1>Our Products</h1>
+
         <div class="product-list">
             <div class="product-item">
+                <img src="images/guava.jpg" alt="Guava" class="product-image">
                 <div class="product-info">
                     <h3>Guava</h3>
                     <p>Fresh and juicy Guava</p>
                     <p class="price">$3.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="guava-quantity">Quantity: </label>
+                    <select id="guava-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Guava" data-price="3.99">Add to Cart</button>
                 </div>
-                <img src="images/guava.jpg" alt="Guava">
             </div>
+
             <div class="product-item">
+                <img src="images/strawberry.jpeg" alt="Strawberries" class="product-image">
                 <div class="product-info">
                     <h3>Strawberries</h3>
                     <p>Sweet and ripe Strawberries</p>
                     <p class="price">$4.49</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="strawberry-quantity">Quantity: </label>
+                    <select id="strawberry-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Strawberries" data-price="4.49">Add to Cart</button>
                 </div>
-                <img src="images/strawberry.jpeg" alt="Strawberries">
             </div>
+
             <div class="product-item">
+                <img src="images/apple.jpeg" alt="Apples" class="product-image">
                 <div class="product-info">
                     <h3>Apples</h3>
                     <p>Crisp and fresh Apples</p>
                     <p class="price">$2.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="apple-quantity">Quantity: </label>
+                    <select id="apple-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Apples" data-price="2.99">Add to Cart</button>
                 </div>
-                <img src="images/apple.jpeg" alt="Apples">
             </div>
+
             <div class="product-item">
+                <img src="images/dalim.jpg" alt="Pomegranates" class="product-image">
                 <div class="product-info">
                     <h3>Pomegranates</h3>
                     <p>Delicious and healthy Pomegranates</p>
                     <p class="price">$5.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="dalim-quantity">Quantity: </label>
+                    <select id="dalim-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Pomegranates" data-price="5.99">Add to Cart</button>
                 </div>
-                <img src="images/dalim.jpg" alt="Pomegranates">
             </div>
+
             <div class="product-item">
+                <img src="images/raapberries.jpeg" alt="Raspberries" class="product-image">
                 <div class="product-info">
                     <h3>Raspberries</h3>
                     <p>Fresh and tart Raspberries</p>
                     <p class="price">$6.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="raapberries-quantity">Quantity: </label>
+                    <select id="raapberries-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Raspberries" data-price="6.99">Add to Cart</button>
                 </div>
-                <img src="images/raapberries.jpeg" alt="Raspberries">
             </div>
+
             <div class="product-item">
+                <img src="images/blueberries.jpeg" alt="Blueberries" class="product-image">
                 <div class="product-info">
                     <h3>Blueberries</h3>
                     <p>Sweet and nutritious Blueberries</p>
                     <p class="price">$7.49</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="blueberries-quantity">Quantity: </label>
+                    <select id="blueberries-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Blueberries" data-price="7.49">Add to Cart</button>
                 </div>
-                <img src="images/blueberries.jpeg" alt="Blueberries">
             </div>
+
             <div class="product-item">
+                <img src="images/lemons.jpeg" alt="Lemons" class="product-image">
                 <div class="product-info">
                     <h3>Lemons</h3>
                     <p>Fresh and zesty Lemons</p>
                     <p class="price">$1.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="lemons-quantity">Quantity: </label>
+                    <select id="lemons-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Lemons" data-price="1.99">Add to Cart</button>
                 </div>
-                <img src="images/lemons.jpeg" alt="Lemons">
             </div>
+
             <div class="product-item">
+                <img src="images/orranges.jpeg" alt="Oranges" class="product-image">
                 <div class="product-info">
                     <h3>Oranges</h3>
                     <p>Juicy and sweet Oranges</p>
                     <p class="price">$3.49</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="oranges-quantity">Quantity: </label>
+                    <select id="oranges-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Oranges" data-price="3.49">Add to Cart</button>
                 </div>
-                <img src="images/orranges.jpeg" alt="Oranges">
             </div>
+
             <div class="product-item">
+                <img src="images/mango.jpg" alt="Mangoes" class="product-image">
                 <div class="product-info">
                     <h3>Mangoes</h3>
                     <p>Sweet and tropical Mangoes</p>
                     <p class="price">$4.99</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="mango-quantity">Quantity: </label>
+                    <select id="mango-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Mangoes" data-price="4.99">Add to Cart</button>
                 </div>
-                <img src="images/mango.jpg" alt="Mangoes">
             </div>
+
             <div class="product-item">
+                <img src="images/banana.jpeg" alt="Bananas" class="product-image">
                 <div class="product-info">
                     <h3>Bananas</h3>
                     <p>Fresh and ripe Bananas</p>
                     <p class="price">$1.59</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="banana-quantity">Quantity: </label>
+                    <select id="banana-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Bananas" data-price="1.59">Add to Cart</button>
                 </div>
-                <img src="images/banana.jpeg" alt="Bananas">
             </div>
+
             <div class="product-item">
+                <img src="images/Kiwi_Small.jpg" alt="Kiwis" class="product-image">
                 <div class="product-info">
                     <h3>Kiwis</h3>
                     <p>Fresh and tangy Kiwis</p>
                     <p class="price">$3.79</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="kiwi-quantity">Quantity: </label>
+                    <select id="kiwi-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Kiwis" data-price="3.79">Add to Cart</button>
                 </div>
-                <img src="images/Kiwi_Small.jpg" alt="Kiwis">
             </div>
+
             <div class="product-item">
+                <img src="images/peaches.jpeg" alt="Peaches" class="product-image">
                 <div class="product-info">
                     <h3>Peaches</h3>
                     <p>Sweet and juicy Peaches</p>
                     <p class="price">$4.49</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="peaches-quantity">Quantity: </label>
+                    <select id="peaches-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Peaches" data-price="4.49">Add to Cart</button>
                 </div>
-                <img src="images/peaches.jpeg" alt="Peaches">
             </div>
+
             <div class="product-item">
+                <img src="images/watermelon.jpg" alt="Watermelons" class="product-image">
                 <div class="product-info">
                     <h3>Watermelons</h3>
                     <p>Refreshing and juicy Watermelons</p>
                     <p class="price">$5.49</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="watermelon-quantity">Quantity: </label>
+                    <select id="watermelon-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Watermelons" data-price="5.49">Add to Cart</button>
                 </div>
-                <img src="images/watermelon.jpg" alt="Watermelons">
             </div>
+
             <div class="product-item">
+                <img src="images/pineapple.jpeg" alt="Pineapples" class="product-image">
                 <div class="product-info">
                     <h3>Pineapples</h3>
                     <p>Sweet and tropical Pineapples</p>
                     <p class="price">$6.49</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <label for="pineapple-quantity">Quantity: </label>
+                    <select id="pineapple-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Pineapples" data-price="6.49">Add to Cart</button>
                 </div>
-                <img src="images/pineapple.jpeg" alt="Pineapples">
             </div>
+
             <div class="product-item">
+                <img src="images/cantalupe.jpg" alt="Cantaloupes" class="product-image">
                 <div class="product-info">
                     <h3>Cantaloupes</h3>
                     <p>Sweet and fragrant Cantaloupes</p>
-                    <p class="price">$4.79</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <p class="price">$4.99</p>
+                    <label for="cantaloupe-quantity">Quantity: </label>
+                    <select id="cantaloupe-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Cantaloupes" data-price="4.99">Add to Cart</button>
                 </div>
-                <img src="images/cantalupe.jpg" alt="Cantaloupes">
             </div>
 
         </div>
-    </div>
-    <div class="footer">
+    </section>
+
+    <footer class="footer">
         <p>&copy; 2025 Fruit Shop. All rights reserved.</p>
         <p>Designed by Dipto Mohammad Rimon Sadman</p>
-    </div>
+    </footer>
+
+    <script>
+        function saveToCart(product) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const existingProduct = cart.find(item => item.name === product.name);
+
+            if (existingProduct) {
+                existingProduct.quantity += product.quantity;
+            } else {
+                cart.push(product);
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        function displayCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItemsContainer = document.getElementById('cart-items');
+            const totalPriceContainer = document.getElementById('total-price');
+            
+            cartItemsContainer.innerHTML = '';
+            let totalPrice = 0;
+            
+            cart.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('cart-item');
+                
+                itemDiv.innerHTML = `
+                    <p>${item.name} - $${item.price}</p>
+                    <p>Quantity: ${item.quantity}</p>
+                `;
+                
+                cartItemsContainer.appendChild(itemDiv);
+                totalPrice += item.price * item.quantity;
+            });
+
+            totalPriceContainer.textContent = totalPrice.toFixed(2);
+        }
+
+        document.addEventListener('DOMContentLoaded', displayCart);
+
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const name = button.getAttribute('data-name');
+                const price = parseFloat(button.getAttribute('data-price'));
+                const quantity = parseInt(button.previousElementSibling.value);
+
+                const product = { name, price, quantity };
+                saveToCart(product);
+            });
+        });
+    </script>
 </body>
+
 </html>
