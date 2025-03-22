@@ -1,87 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-image:url(images/1.jpg);
-    background-size: cover;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content:flex-end;
-    align-items: ;
-    height: 100vh;
-  }
-  
-  .login-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    position: absolute;
-    top: 100px;
-    right: 50px;
-    background-color: #39044e;
-    padding: 2rem;
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/1.jpg'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f0f0f0; /* Fallback color */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 600px;
-    width: 400px;
-  }
-  
-  h2 {
-    text-align: left;
-    margin-bottom: 1.5rem;
-    color: #ccc;
-  }
-  
-  .input-group {
-    margin-bottom: 1rem;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #f0f0f0;
-  }
-  
-  input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #38bcf0;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  .forgot-password {
-    text-align: center;
-    margin-top: 1rem;
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
 
-  }
-  
-  .signup-link {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  .signup-link a {
-    color: #bccee0;
-  }
-  
-  .signup-link a:hover {
-    text-decoration: underline;
-  }
- 
+.left-side {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.left-side h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.left-side p {
+  font-size: 1.8rem;
+}
+
+.login-container {
+  background-color: #39044e;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #f0f0f0;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #38bcf0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+.forgot-password {
+  margin-top: 1rem;
+}
+
+.forgot-password a {
+  color: #bccee0;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.signup-link {
+  margin-top: 1rem;
+}
+
+.signup-link a {
+  color: #bccee0;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
